@@ -11,30 +11,61 @@
     Author: Abigail Zelen
     Date:   4/30/2020
 
-    Filename: jtc_services.html
+    Filename: index.html
 	-->
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Abigail Zelen Photography</title>
-    <link href="styles.css" rel="stylesheets"/>
-   <!--LINK PHOTOGRAPHY LOGO-->
-    <!--
-      Abigail Zelen
-    -->
+    <!--M1LO8 Demonstrate the use of external style sheets (HTML, note the external style sheet must exist and contain CSS)-->
+    <link href="styles.css" rel="stylesheet"/>
+    
 </head>
 <body>
   <header>
+
+    <!--M1LO9 Demonstrate the use of inline images (HTML)-->
     <nav>
-      <li><a href=index.html></a>Home</li>
-      <li><a href="about.html"></a>Contact/About</li>
+      <ul>
+        <!--M1LO12 Create navigation using unordered lists (HTML)-->
+        <!--M1L013 Demonstrate using 3 types of hyperlinks: site navigation, targeted loaction using ids,
+        and external (HTML, this item should be specified 3 times, once on each type of link-->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">Contact/About</a></li>
+      </ul>
     </nav>
-        <img src="AZPlogo.PNG" alt="Abigail Zelen Photography"
+    <a href="index.html"><img src="AZPlogo.PNG" alt="Abigail Zelen Photography"/></a>
+    
   </header>
     <article>
-    <p><strong>If home</strong>is where the heart is. My home is photography.</p>
-    <p><em>Abigail Zelen</em></p>
-    </article>
-     <footer>
+      <h1>WELCOME</h1>
+      <img src="Homepageimage.jpg" alt="" />
+      
+      <!--M1LO10 Demonstrate the use of special characters from extended character sets (HTML, use entities, not cut-and-pasted unicode characters)-->
+      <p> &quot; If home is where the heart is. My home is photography. &quot; </p>
+      
+      <p> &ndash; <em> Abigail Zelen</em></p>
 
-     </footer>
+      <h2>Welcome to my photography website!</h2>
+      
+      <p>I'm so glad you're here!  Here you can find my portfolio, read about my latest adventures and photography
+        discoveries, and more.  Here are some of my specialties: </p>
+      
+        <!--M1LO7 Demonstrate the use of ordered lists (HTML)-->
+        <ol>
+          <li>Macro</li>
+          <li>Nature</li>
+          <li>Portraits</li>
+        </ol>
+        <p>Want to learn more about me and my buisness?</p>
+        <!--M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external 
+        (HTML, this item should be specified 3 times, once on each type of link)-->
+        <p><Strong><a href="about.html#About">About/Contact</a></Strong></p>
+    </article>
+    <footer>
+      <address>
+        Poulsbo Washington &#8226; <a href="mailto:abigailzelenphotography@gmail.com">AbigailZelenPhotography@gmail.com</a>
+      </address>
+    </footer>
 </body>
 </html>
