@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <!--
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   V1 Assignment
+   
+   Abigail Zelen Photography
+   Author: Abigail Zelen
+   Date:   4/30/2020
+
+   Filename: about.html
+   -->
+   <meta charset="utf-8">
+   <title>Abigail Zelen Photography</title>
+
+   <!--M1LO8 Demonstrate the use of external style sheets (HTML, note the external style sheet must exist and contain CSS)-->
+   <link href="styles.css" rel="stylesheet"/>
+
+   <!--M2LO4 Demonstrate external, embedded, and inline styles 
+   (HTML, this item should be specified 2 times, once each for embedded and inline styles;
+   note external was taken care of with M1LO8; see 2-3b Embedded Style Sheets, 
+   and 2-3c Inline Styles)-->
+   <style>
+      h1 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        font-size: 50px;
+      }
+    </style>
+
+  </head>
+    <body>
+      <header>
+
+        <!--M1LO9 Demonstrate the use of inline images (HTML)-->
+        <nav>
+          <ul>
+            <!--M1LO12 Create navigation using unordered lists (HTML)-->
+            <!--M1L013 Demonstrate using 3 types of hyperlinks: site navigation, targeted loaction using ids,
+            and external (HTML, this item should be specified 3 times, once on each type of link-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">Contact/About</a></li>
+          </ul>
+        </nav>
+
+        <!--M1LO9 Demonstrate the use of inline images (HTML)-->
+        <!--M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external 
+        (HTML, this item should be specified 3 times, once on each type of link) THIS IS TARGETED LOCATION-->
+        <a href="index.html"><img src="AbigailZelenPhotographyLogo.JPG" alt="Abigail Zelen Photography"/></a>
+    
+      </header>
+
+      <article>
+        <Section>
+        
+         <h1>ABOUT/CONTACT</h1>
+         <!--M2LO6  Demonstrate a CSS id and a CSS class selector 
+         (CSS, specify 2 times, show a use of id and a use of class, see 2-9b Attribute selectors)-->
+         <h2 id="Bio">Bio:</h2>
+      
+         <p style="text-indent: 1em;">
+          Born and raised in a small town, with two brothers and a sister I quickly 
+          developed a love of adventure, and spending time with my family.  My family first became
+          aware of my love for photography, when I recieved a camera for christmas around the age of 10.
+          I was constantly terroizing my family by taking photographs and videos of them.  Since then, 
+          my love of photography has only grown.  On the rare ocassion that I'm not taking photographs,
+          or spending time with my friends and family, or working.  
+          You'll find in the shop working with wood,
+          drawing, writing, or watching my current favorite tv show.
+         </p>
+        </Section>
+
+        <Section>
+          <h2 class="About">Contact:</h2>
+          <p style="text-indent: 1em;">Interested in contacting me?</p>
+          <p style="text-indent: 1em;"> &#8226; <a href="mailto:abigailzelenphotography@gmail.com">Email: AbigailZelenPhotography@gmail.com</a><br /></p>
+          <p style="text-indent: 1em;"> &#8226; <a href="tel:+13603021816">Cell:1-360-302-1816</a></p>
+        </section>
+
+        <section>
+          <!--M2LO6  Demonstrate a CSS id and a CSS class selector 
+          (CSS, specify 2 times, show a use of id and a use of class, see 2-9b Attribute selectors)-->
+          <h2 class="About">ABOUT:</h2>
+          <p>
+            <p>Name: Abigail Zelen<br />
+              Course: CIS 155<br />
+              Date: 5/01/2020<br />
+              Brief Summary/Overview:</p>
+              <p>
+                <ul>
+                  <li>On my splash page, I've included some general information about my cite, a photograph,
+                  and a footer.  My image is very large, so I will be resizing in the next version.
+                  </li>
+                  <li>On my Portfolio Page, I've created a place holder for images I will insert once we go over 
+                  image sizing parameters.
+                  </li>
+                  <li>On my Bio Page, I've created a place holder for images and short blogs.  I will insert images
+                  once we go over image sizing parameters.
+                  </li>
+                  <li>On my about page, I've inculded a short bio, and contact information.</li>
+                </ul>
+              </p>
+        </section>
+      </article>
+        <footer>
+          <address>
+            <strong>Located in Poulsbo Washington</strong> 
+          </address>
+        </footer>
+    </body>
+</html>

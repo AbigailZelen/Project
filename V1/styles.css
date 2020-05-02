@@ -1,3 +1,17 @@
+@charset "utf-8"
+/*
+M1LO8 Demonstrate the use of external style sheets 
+(HTML, note the external style sheet must exist and contain CSS)
+/*
+
+@font-face {
+    font-family: Gadget;
+    src: url('Gadget.ttf') format('truetype')
+}
+/* Citation for Gadget font:
+Www.fontpalace.com. (n.d.). Download Gadget Font - Free Font Download. 
+Retrieved from https://www.fontpalace.com/font-download/Gadget/ */
+
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    V1 Assignment
@@ -9,23 +23,159 @@
 
 */
 
-
 /* Structural Styles */
 
 
+/* M2LO15 Apply colors using CSS (CSS, see 2-5 Working with Color in CSS) */
+html {
+    background-color: white;
+}
 
-  
+/* M2LO3 Demonstrate style precedence and inheritance in CSS (CSS, this 
+item should be specified 2 times, once where precedence is applied and 
+once where inheritance is applied; see 2-3d Style Specificity and Precedence, and 2-3e Style Inheritance)
+NOTE: THIS SHOWS INHERITANCE BECAUSE ALL OF THE ELEMENTS THAT ARE CHILDREN OF THE ARTICLE
+UNLESS SPECIFIED OTHERWISE WILL HAVE
+BLACK TEXT, AND THE SAME FONT, ETC... */
+/*
+M2LO14 Demonstrate and explain the use of progressive enhancement in CSS 
+(CSS, see 2-6 Employing Progressive Enhancement)
+EXPLAINATION: Since HSL wasn't avalible until CSS3 older browers may not be able to render colors in HSL
+but they will be able to render colors in RGB, so you can include both hsl and rgb depending on your audience 
+and their browers.
+*/
+article{
+    color: hsl(0, 0 , 0);
+    color: rgb(0, 0, 0);
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: larger;
+}
+
+h1 {
+    font-family: 'cursive', fantasy, gadget;
+    font-size: 65px;
+    letter-spacing: 0.09em;
+}
+
+/*
+M2LO13 Demonstrate how CSS can change presentation of textual elements 
+(CSS, these are styles that impact text that is rendered on the page)
+NOTE: LETTER SPACING DEMONSTRATES THIS.
+*/
+h2 {
+    font-family: 'Cursive', fantasy, gadget;
+    font-size: 45px;
+    letter-spacing: 0.09em;
+}
+
+/*M2LO3 Demonstrate style precedence and inheritance in CSS 
+(CSS, this item should be specified 2 times, once where precedence is applied
+ and once where inheritance is applied; see 2-3d Style Specificity and Precedence, 
+ and 2-3e Style Inheritance) 
+ NOTE: THIS DEMONSTRATES STYLE PRECEDENCE AS THE COLOR FOR EM TAKES PRESEDENCE OVER THE COLOR OF
+ THE PARAGRAPHS*/
+p {
+    color: black;
+}
+
+/*
+M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector (CSS, specify 2 times, show one
+pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-Elements)
+*/
+h2::first-letter{
+    font-size: larger;
+}
+
+em{
+    color: blue;
+    text-indent: 1em;
+}
+
+/*
+M2LO7 Demonstrate a CSS attribute selector other than class or id (CSS, specify 1 time,
+see 2-9b Attribute selectors)
+*/
+a[href] {
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+/* 
+M2LO5 Demonstrate contextual selectors (CSS, specify 2 times, showing two different types of 
+contextual selectors as shown in Figure 2-12, Contextual Selectors, of the textbook)
+*/
+strong, address {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(97, 97, 97);
+}
+
 /* Navigation Styles */
+
+/*
+M2LO5 Demonstrate contextual selectors (CSS, specify 2 times, showing two different types 
+of contextual selectors as shown in Figure 2-12, Contextual Selectors, of the textbook)
+*/
+nav {
+    font-size: 22px;
+    font-family: 'Arial', Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+}
+
+/*
+M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector (CSS, specify 2 times, 
+show one pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-Elements)
+*/
+nav > ul > li > a:hover, nav > ul > li > a:active {
+    text-decoration: underline;
+}
+
+nav > ul {
+    list-style-type: none;
+}
   
   
-  
-  
-  
+/*
+M2LO12 Demonstrate how CSS can change presentation of page elements 
+(CSS, these are styles that impact page elements rather than impacting text on the page)
+*/  
 /* Section Styles */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/*
+M2LO6  Demonstrate a CSS id and a CSS class selector
+(CSS, specify 2 times, show a use of id and a use of class, see 2-9b Attribute selectors)
+*/
+#Bio{
+    font-weight: bold;
+    font-size: 40px;
+}
+#Portfolio{
+    font-weight: bold;
+    font-size: 40px;
+}
+#Blog{
+    font-weight: bold;
+    font-size: 40px;
+}
+/*
+M2LO6  Demonstrate a CSS id and a CSS class selector
+(CSS, specify 2 times, show a use of id and a use of class, see 2-9b Attribute selectors)
+*/
+.About{
+    font-weight: bold;
+    font-size: 40px;
+}
+
   
   
   
   
 /* Definition List Styles */
-  
   
