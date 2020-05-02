@@ -12,9 +12,10 @@ Retrieved from https://www.fontpalace.com/font-download/Gadget/ */
    V1 Assignment
    
    Author: Abigail Zelen
-   Date: 4/30/2020
+   Date: 5/30/2020
    
    Filename: styles.css
+   Purpose of this file:  To change and format my html pages by using css.
 
 */
 
@@ -38,7 +39,7 @@ UNLESS SPECIFIED OTHERWISE WILL HAVE
 BLACK TEXT, AND THE SAME FONT, ETC... */
 /* M2LO14 Demonstrate and explain the use of progressive enhancement in CSS 
 (CSS, see 2-6 Employing Progressive Enhancement)
-EXPLAINATION: Since HSL wasn't avalible until CSS3 older browers may not be able to render colors in HSL
+NOTE/EXPLINATION: Since HSL wasn't avalible until CSS3 older browers may not be able to render colors in HSL
 but they will be able to render colors in RGB, so you can include both hsl and rgb depending on your audience 
 and their browers.
 */
@@ -72,7 +73,8 @@ h2 {
  and 2-3e Style Inheritance) 
  NOTE: THIS DEMONSTRATES STYLE PRECEDENCE AS THE COLOR FOR EM TAKES PRESEDENCE OVER THE COLOR OF
  THE PARAGRAPHS*/
-/* M2LO15 Apply colors using CSS (CSS, see 2-5 Working with Color in CSS) */
+/* M2LO15 Apply colors using CSS (CSS, see 2-5 Working with Color in CSS) 
+Note: THE COLOR OF THE EM IN MY INDEX PAGE IS BLUE ACHIEVING THIS OBJECTIVE*/
 p {
     color: black;
 }
@@ -83,6 +85,7 @@ em{
 /*
 M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector (CSS, specify 2 times, show one
 pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-Elements)
+NOTE: THIS IS A PSEUDO-ELEMENT SELECTOR. THIS OBJECTIVE IS ACHIEVED AS THE FIRST LETTER OF EVERY H2 IS SLIGHTLY LARGER.
 */
 h2::first-letter{
     font-size: larger;
@@ -90,6 +93,8 @@ h2::first-letter{
 /*
 M2LO7 Demonstrate a CSS attribute selector other than class or id (CSS, specify 1 time,
 see 2-9b Attribute selectors)
+NOTE: THIS ACHIEVES THE LEARNING OBJECTIVE BY USING A CSS ATTRIBUTE SELECTOR OTHER THAN CLASS OR
+ID.  ALL HYPER LINKS OR TAGS WITH A[HREF] HAVE A BIGGER FONT, NO TEXT DECORATION AND THE TEXT IS BLACK.
 */
 a[href] {
     font-size: 22px;
@@ -99,6 +104,7 @@ a[href] {
 /* 
 M2LO5 Demonstrate contextual selectors (CSS, specify 2 times, showing two different types of 
 contextual selectors as shown in Figure 2-12, Contextual Selectors, of the textbook)
+NOTE, THIS DEMONSTRATES CONTEXTUAL SELECTORS.  IN THIS CASE, THE SELECTORS ARE "STRONG," AND "ADDRESS".
 */
 strong, address {
     font-size: 15px;
@@ -111,7 +117,7 @@ strong, address {
 /*
 M2LO5 Demonstrate contextual selectors (CSS, specify 2 times, showing two different types 
 of contextual selectors as shown in Figure 2-12, Contextual Selectors, of the textbook)
-*/
+NOTE, THIS DEMONSTRATES CONTEXTUAL SELECTOR.  IN THIS CASE, THE SELECTOR IS "NAV".*/
 nav {
     font-size: 22px;
     font-family: 'Arial', Helvetica, sans-serif;
@@ -122,7 +128,15 @@ nav {
 /*
 M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector (CSS, specify 2 times, 
 show one pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-Elements)
+NOTE: THIS OBJECTIVE IS ACHIEVED BY CREATED AN UNDERLINE UNDER THE PAGE LINKS IN THE NAV SECTION.
+IF YOUR MOUSE IS OVER ONE OF THE PAGE LINKS, THE LINK SHOWS AN UNDERLINE, SO YOU KNOW WHICH LINK YOU'LL BE GOING TO.
 */
+/*
+M2LO12 Demonstrate how CSS can change presentation of page elements 
+(CSS, these are styles that impact page elements rather than impacting text on the page)
+NOTE: THIS DEMONSTRATES HOW CSS CAN CANGE THE PRESENTATION OF PAGE ELEMENTS AS HOVERING OVER AN ELEMENT
+CHANGES MAKES AN UNDERLINE APPEAR.
+*/  
 nav > ul > li > a:hover, nav > ul > li > a:active {
     text-decoration: underline;
 }
@@ -136,6 +150,9 @@ nav > ul {
 /*
 M2LO12 Demonstrate how CSS can change presentation of page elements 
 (CSS, these are styles that impact page elements rather than impacting text on the page)
+NOTE: THIS SHOWS HOW CSS CAN CHAGE THE PRESENTATION OF PAGE ELEMENTS AS IT CHANGES THE SIZE OF AN IMAGE.
+(I KNOW THAT THIS WASN'T COVERED IN THIS CHAPTER, SO I'VE LISTED M2LO12 TWICE TO MAKE SURE THE OBJECTIVE IS COVERED
+IF THIS DOESN'T COUNT SINCE WE HAVEN'T GONE OVER THIS IN THE TEXTBOOK.)
 */  
 img {
     display: block;
@@ -147,6 +164,8 @@ img {
 /*
 M2LO6  Demonstrate a CSS id and a CSS class selector
 (CSS, specify 2 times, show a use of id and a use of class, see 2-9b Attribute selectors)
+NOTE: THIS DEMONSTRATES A CSS ID WHERE THE ID "BIO" IS EFFECTED AND CHANGED DUE TO CODE
+HERE IN THE CSS FILE.
 */
 #Bio{
     font-weight: bold;
@@ -163,6 +182,9 @@ M2LO6  Demonstrate a CSS id and a CSS class selector
 /*
 M2LO6  Demonstrate a CSS id and a CSS class selector
 (CSS, specify 2 times, show a use of id and a use of class, see 2-9b Attribute selectors)
+NOTE: THIS DEMONSTRATES A CSS CLSS WHERE THE CLASS "ABOUT" IS EFFECTED AND CHANGED DUE TO CODE
+HERE IN THE CSS FILE.
+*/
 */
 .About{
     font-weight: bold;
