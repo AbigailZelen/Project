@@ -1,8 +1,4 @@
 @charset "utf-8"
-/*
-M1LO8 Demonstrate the use of external style sheets 
-(HTML, note the external style sheet must exist and contain CSS)
-/*
 
 @font-face {
     font-family: Gadget;
@@ -26,7 +22,11 @@ Retrieved from https://www.fontpalace.com/font-download/Gadget/ */
 /* Structural Styles */
 
 
-/* M2LO15 Apply colors using CSS (CSS, see 2-5 Working with Color in CSS) */
+
+/*
+M2LO12 Demonstrate how CSS can change presentation of page elements 
+(CSS, these are styles that impact page elements rather than impacting text on the page)
+NOTE: THE BACKGROUND ELEMENT IS THE ELEMENT THAT IS BEING IMPACTED.  THE IMPACT IS CHANGING THE BACKGROUND COLOR TO WHITE*/  
 html {
     background-color: white;
 }
@@ -37,8 +37,7 @@ once where inheritance is applied; see 2-3d Style Specificity and Precedence, an
 NOTE: THIS SHOWS INHERITANCE BECAUSE ALL OF THE ELEMENTS THAT ARE CHILDREN OF THE ARTICLE
 UNLESS SPECIFIED OTHERWISE WILL HAVE
 BLACK TEXT, AND THE SAME FONT, ETC... */
-/*
-M2LO14 Demonstrate and explain the use of progressive enhancement in CSS 
+/* M2LO14 Demonstrate and explain the use of progressive enhancement in CSS 
 (CSS, see 2-6 Employing Progressive Enhancement)
 EXPLAINATION: Since HSL wasn't avalible until CSS3 older browers may not be able to render colors in HSL
 but they will be able to render colors in RGB, so you can include both hsl and rgb depending on your audience 
@@ -52,7 +51,7 @@ article{
 }
 
 h1 {
-    font-family: 'cursive', fantasy, gadget;
+    font-family: 'Gadget' cursive, fantasy;
     font-size: 65px;
     letter-spacing: 0.09em;
 }
@@ -63,7 +62,7 @@ M2LO13 Demonstrate how CSS can change presentation of textual elements
 NOTE: LETTER SPACING DEMONSTRATES THIS.
 */
 h2 {
-    font-family: 'Cursive', fantasy, gadget;
+    font-family: 'Fantasy', gadget;
     font-size: 45px;
     letter-spacing: 0.09em;
 }
@@ -74,10 +73,14 @@ h2 {
  and 2-3e Style Inheritance) 
  NOTE: THIS DEMONSTRATES STYLE PRECEDENCE AS THE COLOR FOR EM TAKES PRESEDENCE OVER THE COLOR OF
  THE PARAGRAPHS*/
+/* M2LO15 Apply colors using CSS (CSS, see 2-5 Working with Color in CSS) */
 p {
     color: black;
 }
-
+em{
+    color: blue;
+    text-indent: 1em;
+}
 /*
 M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector (CSS, specify 2 times, show one
 pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-Elements)
@@ -85,12 +88,6 @@ pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-El
 h2::first-letter{
     font-size: larger;
 }
-
-em{
-    color: blue;
-    text-indent: 1em;
-}
-
 /*
 M2LO7 Demonstrate a CSS attribute selector other than class or id (CSS, specify 1 time,
 see 2-9b Attribute selectors)
@@ -134,13 +131,13 @@ nav > ul > li > a:hover, nav > ul > li > a:active {
 nav > ul {
     list-style-type: none;
 }
-  
-  
+
+/* Section Styles */
+
 /*
 M2LO12 Demonstrate how CSS can change presentation of page elements 
 (CSS, these are styles that impact page elements rather than impacting text on the page)
 */  
-/* Section Styles */
 img {
     display: block;
     margin-left: auto;
