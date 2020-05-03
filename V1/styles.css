@@ -119,10 +119,22 @@ M2LO5 Demonstrate contextual selectors (CSS, specify 2 times, showing two differ
 of contextual selectors as shown in Figure 2-12, Contextual Selectors, of the textbook)
 NOTE, THIS DEMONSTRATES CONTEXTUAL SELECTOR.  IN THIS CASE, THE SELECTOR IS "NAV".*/
 nav {
-    font-size: 22px;
+    font-size: 60px;
+    font-weight: bold;
     font-family: 'Arial', Helvetica, sans-serif;
-    text-align: left;
+    text-align: center;
     text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    display: inline;
+    margin: 12px;
+    padding: 12px;
 }
 
 /*
@@ -141,9 +153,7 @@ nav > ul > li > a:hover, nav > ul > li > a:active {
     text-decoration: underline;
 }
 
-nav > ul {
-    list-style-type: none;
-}
+
 
 /* Section Styles */
 
