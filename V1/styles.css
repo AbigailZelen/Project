@@ -126,12 +126,12 @@ nav {
     text-decoration: none;
 }
 
-ul{
+nav ul{
     list-style-type: none;
     margin: 0px;
     padding: 0px;
 }
-li{
+nav ul li{
     display: inline;
     margin: 12px;
     padding: 12px;
