@@ -22,7 +22,6 @@ Retrieved from https://www.fontpalace.com/font-download/Gadget/ */
 /* Structural Styles */
 
 
-
 html {
     background-color: white;
 }
@@ -48,9 +47,9 @@ h2 {
     letter-spacing: 0.09em;
 }
 
-
 p {
     color: black;
+    text-indent: 1em;
 }
 em{
     color: blue;
@@ -94,6 +93,7 @@ nav ul li{
     padding: 12px;
 }
 
+ 
 nav > ul > li > a:hover, nav > ul > li > a:active {
     text-decoration: underline;
 }
@@ -101,7 +101,6 @@ nav > ul > li > a:hover, nav > ul > li > a:active {
 
 
 /* Section Styles */
-
 
 img {
     display: block;
@@ -128,5 +127,9 @@ img {
     font-size: 40px;
 }
 
+  
+  
+  
+  
 /* Definition List Styles */
   
