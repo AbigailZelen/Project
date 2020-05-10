@@ -1,0 +1,179 @@
+@charset "utf-8";
+@font-face {
+    font-family: Gadget;
+    src: url('Gadget.ttf') format('truetype');
+}
+@font-face{
+    font-family: Alex Brush;
+    src: url('AlexBrush-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: Euphorigenic;
+    src: url('euphorigenic.ttf') format('truetype');
+}
+
+/* Citation for Fonts:
+Gadget:
+Www.fontpalace.com. (n.d.). Download Gadget Font - Free Font Download. 
+Retrieved from https://www.fontpalace.com/font-download/Gadget/ 
+OTHER FONTS:
+Google Web Fonts. (n.d.). Retrieved from https://www.1001fonts.com/google-web-fonts.html?page=6&items=10
+*/
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   V1 Assignment
+   
+   Author: Abigail Zelen
+   Date: 5/08/2020
+   
+   Filename: styles.css
+   Purpose of this file:  To change and format my html pages by using css.
+
+*/
+
+/* Grid Styles */
+
+aside{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+section{
+    display: grid;
+    margin-right: auto;
+    margin-left: auto;
+}
+h1, h2, h3, h4, h5{
+    display: grid;
+    grid-template-rows: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Typographic Styles */
+
+/* M3LO1 Demonstrate the use of a CSS reset style sheet (CSS, note where you have CSS reset rules)*/
+body, article, header, html, p, li, ol, ul, em,
+footer, address{
+    background-color: white;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Structural Styles */
+
+html {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+
+article{
+    color: hsl(0, 0%, 0%);
+    color: rgb(0, 0, 0);
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 15px 15px 15px;
+}
+
+h1::first-letter {
+    font-family: "Alex Brush", Euphorigenic, fantasy;
+    font-size: 70px;
+    letter-spacing: 0.09em;
+    font-weight: bold;
+}
+h1 {
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+p {
+    color: black;
+    font-family: 'Arial', Helvetica, sans-serif;
+    text-indent: 1em;
+}
+article > h1 > img > p > em{
+    text-indent: 2em;
+}
+
+h2::first-letter{
+    font-size: larger;
+}
+
+a[href] {
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+
+strong, address {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(97, 97, 97);
+}
+
+ol, ul{
+    text-decoration: dashed;
+}
+/* Image Styles */
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+/* Navigation Styles */
+
+nav {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Arial', Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* M3LO2 Demonstrate floating elements 
+(CSS, note where you have specified a floating element and what its impact is)
+Imapct: this float places the list items in line with eachother on the top of the page.
+*/
+nav > ul > li{
+    display: block;
+    float: left;
+    width: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+    text-decoration: underline;
+}
+
+
+
+/* Section Styles */
+
+
+/* Definition List Styles */
+  

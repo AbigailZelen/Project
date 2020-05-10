@@ -1,20 +1,9 @@
-<!--M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids,
-and external (HTML, this item should be specified 3 times, once on each type of link) NOTE: FOR 
-LEARNING OBJECTIVE M1LO13 I DID NOT CREATE AN EXTERNAL LINK.  REASON AS TO WHY IS INCLUDED IN MY 
-PROJECT SITE REPORT.-->
-
 <!DOCTYPE html>
- <!--M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page 
- (HTML, this item should be specified once, describing how the file it is meets this outcome)
-  Note: I ACHIEVED THIS BY USING THE MOST CURRENT TAG FOR HTML DOCUMENTS-->
+
   <html>
     <head>
       <meta charset="utf-8"/>
       <title>Abigail Zelen Photography</title>
-
-      <!--M1LO8 Demonstrate the use of external style sheets (HTML, note the external style sheet must
-        exist and contain CSS)
-       Note: I ACHIEVED THIS BY LINKING MY STYLE SHEET TO MY HTML DOCUMENT TO REFLECT CHANGES I APPLY TO MY CSS-->
       <link href="styles.css" rel="stylesheet"/> 
       
       <!-- New Perspectives on HTML5 and CSS3, 7th Edition
@@ -22,11 +11,11 @@ PROJECT SITE REPORT.-->
     
       Abigail Zelen Photography
       Author: Abigail Zelen
-      Date:   5/30/2020
+      Date:   5/08/2020
       Course Name: CIS 155
       Filename: index.html
       Purpose of this File:  To demonstrate the use of basic HTML and CSS coding, and apply ideas and concepts
-      into a practical cite.  For my project, I'm creating a portfolio website to share my photography work.
+      into a practical site.  For my project, I'm creating a portfolio website to share my photography work.
 	    -->
     
   
@@ -35,12 +24,6 @@ PROJECT SITE REPORT.-->
       <header>
         <nav>
           <ul>
-            <!--M1LO12 Create navigation using unordered lists (HTML)
-            Note: I ACHIEVED THIS BY LINKING FOUR DIFFERENT HTML FILES WITH HYPERLINKS INSIDE OF A UNORDERED LIST-->
-            <!--M1L013 Demonstrate using 3 types of hyperlinks: site navigation, targeted loaction using ids,
-            and external (HTML, this item should be specified 3 times, once on each type of link) THIS IS SITE NAVIGATION
-            Note: I ACHIEVED THIS BY CREATING SITE NAVIGATION.  MY CURRENT FOUR PAGES ARE LINKED TO EACHOTHER WITH THE USE OF
-            HYPERLINKS-->
             <li><a href="index.html">Home</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="blog.html">Blog</a></li>
@@ -48,60 +31,44 @@ PROJECT SITE REPORT.-->
           </ul>
         </nav>
       
-        <!--M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external 
-        (HTML, this item should be specified 3 times, once on each type of link) THIS IS TARGETED LOCATION. 
-        Note: I ACHIEVED THIS BY MAKING MY LOGO INTO A HYPERLINK THAT WILL BRING YOU BACK TO THE HOME PAGE WHEN
-        YOU CLICK ON IT.-->
-        <a href="index.html"><img src="AbigailZelenPhotographyLogo.JPG" alt="Abigail Zelen Photography"/></a>
+        <a href="index.html"><img src="AbigailZelenPhotographyLogo.JPG" style="width: 100%" alt="Abigail Zelen Photography"/></a>
 
       </header>
 
       <article>
 
         <h1>Abigail Zelen Photography</h1>
+          <section>
+            <img src="Homepageimage.jpg" style="width: 60%" alt="" />
+      
+            <p> &quot; If home is where the heart is. My home is photography. &quot; </p>
+            <p style="text-indent: 1em;"> &ndash; <em>Abigail Zelen</em></p>
 
-        <!--M1LO9 Demonstrate the use of inline images (HTML)
-        Note: I ACHIEVED THIS BY INSERTING AN IMAGE INTO MY HOME PAGE-->
-        <img src="Homepageimage.jpg" alt="" />
-      
-        <!--M1LO10 Demonstrate the use of special characters from extended character sets (HTML, use entities, not cut-and-pasted unicode characters)
-        Note: I ACHIEVED THIS BY USING SPECIAL CHARACTERS TO PUT QUOTATIONS AROUND MY PARAGRAPH.-->
-        <p> &quot; If home is where the heart is. My home is photography. &quot; </p>
-      
-        <!--M2LO4 Demonstrate external, embedded, and inline styles (HTML, this item should be specified 2 times, once each for embedded and inline styles; note 
-        external was taken care of with M1LO8; see 2-3b Embedded Style Sheets, and 2-3c Inline Styles)
-        Note: I ACHIEVED THIS BY EMBEDDING A TEXT INDENTATION IN MY PARAGRAPH-->
-        <p style="text-indent: 1em;"> &ndash; <em>Abigail Zelen</em></p>
+          </section>
 
         <h2>Welcome to my photography website!</h2>
+
+          <section>
       
-        <p>I'm so glad you're here!  Here you can find my portfolio, read about my latest adventures, photography
-        discoveries, and more.  Here are some of photography passions: </p>
-      
-          <!--M1LO7 Demonstrate the use of ordered lists (HTML)
-          Note: I ACHIEVED THIS BY CREATING AN ORDERED LIST TO DISPLAY SOME OF MY SPECIALTIES AS A PHOTOGRAPHER-->
-          <ol>
-            <li>Macro Photography</li>
-            <li>Nature/landscapes</li>
-            <li>Portraits</li>
-          </ol>
+            <p>I'm so glad you're here!  Here you can find my portfolio, read about my latest adventures, photography
+            discoveries, and more.  Here are some of photography passions: </p>
+    
+             <ol>
+                <li>Macro Photography</li>
+                <li>Nature/landscapes</li>
+                <li>Portraits</li>
+              </ol>
 
-        <p>Want to learn more about me and my buisness?</p>
+            <p>Want to learn more about me and my buisness?</p>
+            <p><a href="about.html#About">About/Contact</a></p>
+          </section>
+        </article>
 
-        <!--M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external 
-        (HTML, this item should be specified 3 times, once on each type of link) THIS IS TARGETED LOCATION
-        NOTE: I ACHIEVED THIS BY CREATING A HYPERLINK FOR "ABOUT/CONTACT" THAT WILL TAKE YOU TO A SEPERATE PAGE IF CLICKED
-        TARGETED LOCATION IS LISTED TWICE BECAUSE I DID NOT CREATE AN EXTERNAL LINK USING HTML.  REASONS WHY ARE LISTED IN THE
-        PROJECT SITE DOCUMENT.-->
-        <p><a href="about.html#About">About/Contact</a></p>
-
-      </article>
-
-      <footer>
-        <address>
-          <strong>Located in Poulsbo Washington</strong> &#8226; 
-          <a href="mailto:abigailzelenphotography@gmail.com">AbigailZelenPhotography@gmail.com</a>
-        </address>
-      </footer>
-    </body>
-</html>
+          <footer>
+            <address>
+              <strong>Located in Poulsbo Washington</strong> &#8226; 
+              <a href="mailto:abigailzelenphotography@gmail.com">AbigailZelenPhotography@gmail.com</a>
+            </address>
+          </footer>
+      </body>
+  </html>
