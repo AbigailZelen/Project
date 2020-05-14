@@ -43,8 +43,8 @@ I've overided the browser default margins and paddings. */
     display: block;
     background-color: white;
     font-size: 100%;
-    margin: 0;
-    padding: 5px;
+    margin: 8px;
+    padding: 2px;
 }
 /* Grid Styles */
 
@@ -73,11 +73,13 @@ div.col-1-2{width: 50%}
 
 /* Structural Styles */
 
-html {
-    background-color: white;
-    height: 100%;
+html{
+    height: auto;
+    min-height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255) 25%, rgba(245, 245, 245));
     width: 100%;
-    margin: 5px;
+    background-repeat: no-repeat;
+    /*M4LO4 Demonstrate the use of gradients (CSS)*/
 }
 
 article{
@@ -109,10 +111,6 @@ p {
     font-size: 20px;
 }
 
-p, h3, h4, h5, h6,{
-    margin-right: 10%;
-    margin-left: 10%;
-}
 a[href]{
     font-size: 22px;
     text-decoration: none;
@@ -134,8 +132,10 @@ body{
 
 footer{
     position: fixed;
-    bottom: 5px;
+    bottom: 3px;
     background-color: rgb(245, 245, 245);
+    margin: none;
+    padding: none;
 /*M3LO9 Demonstrate fixed, static, or inherited positioning (CSS, note explicit use of one of 
 the three in your CSS and what the impact is on the HTML)
 DEMONSTRATE FIXED POSITION: Here I demonstrated fixed position as my footer is in a fixed position
@@ -211,10 +211,11 @@ Demonstrated by:  I've demonstrated this by creating a box around my quote that'
 underneath my home image*/
 }
 
+
 /* Navigation Styles */
 
 nav{
-    padding: 16px;
+    padding: 5px;
     background-color: white;
     background-color: rgb(255, 255, 255);
 
@@ -263,7 +264,7 @@ nav > ul > li > a:hover, nav > ul > li > a:active {
     padding-bottom: 11.5px;
     width: 23.8%;
     border-style: solid;
-
+    overflow: none;
 }
   .dropdown {
     position: relative;
@@ -273,7 +274,7 @@ nav > ul > li > a:hover, nav > ul > li > a:active {
   .dropdown-content {
     display: none;
     position: absolute;
-    min-width: 23.8%;
+    min-width: 300px;
     float: left;
     background-color: white;
     border-radius: 0px 0px 8px 8px;
