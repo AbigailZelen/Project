@@ -54,7 +54,10 @@ div.row{
 /*M4LO3 Demonstrate the use of rounded corners for borders (CSS)
 Domatrated by: creating a radious around the border of my CSS grid on my About/contact page.*/
     border-radius: 15px;
-    margin: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 div.row::after{
@@ -70,6 +73,15 @@ div[class^="col-"]{
 div.row {width: 100%}
 div.col-1-2{width: 50%}
 
+div.row1{
+    clear: both;
+    border-top-style: double;
+    border-bottom-style: double;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 /* Structural Styles */
 
@@ -77,12 +89,16 @@ html{
     height: auto;
     min-height: 100%;
     background: linear-gradient(180deg, rgba(255, 255, 255) 25%, rgba(245, 245, 245));
-    background: -webkit-linear-gradient(180deg, rgba(255, 255, 255) 25%, rgba(245, 245, 245));;
-    background: -moz-linear-gradient(180deg, rgba(255, 255, 255) 25%, rgba(245, 245, 245));;
-    background: -o-linear-gradient(180deg, rgba(255, 255, 255) 25%, rgba(245, 245, 245));;
+    /*M4LO4 Demonstrate the use of gradients (CSS)*/
     width: 100%;
     background-repeat: no-repeat;
-    /*M4LO4 Demonstrate the use of gradients (CSS)*/
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*M3LO10 Demonstrate an overflow setting (CSS, note explicit use of an overflow 
+    setting in your CSS and what the impact is on the HTML)
+    Demonstrated by: creating an overflow property that hides overflow on the x axis (any overflow
+    on the left or right sides), and an overflow property that only adds a scroll bar where necessary (on 
+    the y axix up and down).*/
 }
 
 article{
@@ -127,6 +143,7 @@ ol, ul{
 body{
     margin-left: auto;
     margin-right: auto;
+    float: center;
     max-width: 2500px;
     min-width: 400px;
     width: 95%;
@@ -135,14 +152,22 @@ body{
 
 footer{
     position: fixed;
-    bottom: 3px;
-    background-color: rgb(245, 245, 245);
+    bottom: -10px;
+    background-color: transparent;
     margin: none;
     padding: none;
 /*M3LO9 Demonstrate fixed, static, or inherited positioning (CSS, note explicit use of one of 
 the three in your CSS and what the impact is on the HTML)
 DEMONSTRATE FIXED POSITION: Here I demonstrated fixed position as my footer is in a fixed position
 and will scroll with the page*/    
+}
+
+/*Specific Element Styles*/
+
+button{
+    text-align: center;
+    font-weight: bold;
+    margin: 3px;
 }
 
 /* Image Styles */
