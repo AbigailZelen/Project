@@ -259,7 +259,8 @@ nav > ul > li > a:hover, nav > ul > li > a:active {
     text-align: center;
     text-decoration: none;
     margin-left: 0px;
-    padding: 11.5px;
+    padding-top: 11.5px;
+    padding-bottom: 11.5px;
     width: 23.8%;
     border-style: solid;
 
