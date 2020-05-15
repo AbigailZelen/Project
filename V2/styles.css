@@ -1,3 +1,7 @@
+/*•	M4LO2 Demonstrate the use of background images (CSS)
+NOTE:  I DID NOT USE A BACKGROUND IMAGE REASON WHY INCLUDED IN PROJECT SITE
+REPORT.*/
+
 @charset "utf-8";
 @font-face {
     font-family: Gadget;
@@ -34,25 +38,34 @@ Google Web Fonts. (n.d.). Retrieved from https://www.1001fonts.com/google-web-fo
 
 /* Typographic Styles */
 
-body, article, header, html, p, li, ol, ul, em,
+body, article, header, html, p, em,
 footer, address{
-/* M3LO1 Demonstrate the use of a CSS reset style sheet (CSS, note where you have CSS reset rules)
-Demonstrated by: Here I've created a starting point for all my html files that will override Browswer defaults.
-I've done this by setting the display to a block (which isn't a default), the background to white, font size, and
-I've overided the browser default margins and paddings. */
+    /* M3LO1 Demonstrate the use of a CSS reset style sheet (CSS, note where you have CSS reset rules)
+    Demonstrated by: Here I've created a starting point for all my html files that will override Browswer defaults.
+    I've done this by setting the display to a block (which isn't a default), the background to white, font size, and
+    I've overided the browser default margins and paddings. */
     display: block;
     background-color: white;
     font-size: 100%;
     margin: 8px;
     padding: 2px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    /*M3LO11 Demonstrate -prefix- style browser extensions use in CSS (CSS note the use in your CSS and what the purpose is)
+    Demonstrated by: Creating a prefix style extension that makes sure the border box will be appied to older
+    browsers.  (Since this is the same as the example given in the book, I've listed it twice to demonstate this
+    concept not directly from the book).*/
 }
+
 /* Grid Styles */
 
 div.row{
     clear: both;
     border-style: solid;
-/*M4LO3 Demonstrate the use of rounded corners for borders (CSS)
-Domatrated by: creating a radious around the border of my CSS grid on my About/contact page.*/
+    /*M4LO3 Demonstrate the use of rounded corners for borders (CSS)
+    Domatrated by: creating a radious around the border of my CSS grid on my About/contact page.*/
     border-radius: 15px;
     margin-right: auto;
     margin-left: auto;
@@ -62,6 +75,9 @@ Domatrated by: creating a radious around the border of my CSS grid on my About/c
 
 div.row::after{
     clear: both;
+    /*M3LO3 Demonstrate a clearing floats (CSS, note where you have used a clear and what its impact is)
+    Demonstrated by: placing a clear: both elemenent so that my grid won't be displayed until all the other elements
+    have been cleared.*/
     content: "";
     display: table;
 }
@@ -72,6 +88,20 @@ div[class^="col-"]{
 
 div.row {width: 100%}
 div.col-1-2{width: 50%}
+div.col-1-2-none{width: 49%}
+div.row-none{width: 98.5%}
+
+div.col-1-2-none{
+    border-style: none;
+    float: left;
+    padding: 5px;
+}
+
+div.row-none{
+    border-style: none;
+    float: left;
+    padding: 5px;
+}
 
 div.row1{
     clear: both;
@@ -87,9 +117,17 @@ div.row1{
 
 html{
     height: auto;
+    -webkit-min-height: 100%;
+    -moz-min-height: 100%;
+    -o-min-height: 100%;
+    /*M3LO11 Demonstrate -prefix- style browser extensions use in CSS (CSS note the use in your CSS and what the purpose is)
+    Demonstrated by: Creating a prefix style extention that will make sure older browsers set the html min height to 100% (not 
+    sure if this is exactly what you're looking for so this Objective is listed twice).*/
     min-height: 100%;
-    background: linear-gradient(180deg, rgba(255, 255, 255) 25%, rgba(245, 245, 245));
-    /*M4LO4 Demonstrate the use of gradients (CSS)*/
+    background: linear-gradient(180deg, rgba(255, 255, 255) 25%, rgba(200, 200, 200));
+    /*M4LO4 Demonstrate the use of gradients (CSS)
+    Demonstrated by:  I've demonstrated this by creating a gradient that follows the edges of my html 
+    document on the left and right size as you scroll.*/
     width: 100%;
     background-repeat: no-repeat;
     overflow-y: auto;
@@ -127,7 +165,7 @@ p {
     color: black;
     font-family: 'Arial', Helvetica, sans-serif;
     text-indent: 2em;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 a[href]{
@@ -136,9 +174,6 @@ a[href]{
     color: black;
 }
 
-ol, ul{
-    text-decoration: dashed;
-}
 
 body{
     margin-left: auto;
@@ -156,10 +191,10 @@ footer{
     background-color: transparent;
     margin: none;
     padding: none;
-/*M3LO9 Demonstrate fixed, static, or inherited positioning (CSS, note explicit use of one of 
-the three in your CSS and what the impact is on the HTML)
-DEMONSTRATE FIXED POSITION: Here I demonstrated fixed position as my footer is in a fixed position
-and will scroll with the page*/    
+    /*M3LO9 Demonstrate fixed, static, or inherited positioning (CSS, note explicit use of one of 
+    the three in your CSS and what the impact is on the HTML)
+    DEMONSTRATE FIXED POSITION: Here I demonstrated fixed position as my footer is in a fixed position
+    and will scroll with the page*/    
 }
 
 /*Specific Element Styles*/
@@ -167,8 +202,8 @@ and will scroll with the page*/
 button{
     text-align: center;
     font-weight: bold;
-    margin: 3px;
 }
+
 
 /* Image Styles */
 img{
@@ -185,18 +220,18 @@ img{
     grid-template-rows: 2fr;
     grid-rows: auto;
     grid-auto-flow: row;
-/*M3LO6 Demonstrate formatting a grid (CSS, note the CSS rules that do this and what 
-their impact is on the HTML; this can be old div-class based grids, or new CSS3 grids)
-IMPACT: This formats the layout of my Images on the blog page.*/
+    /*M3LO6 Demonstrate formatting a grid (CSS, note the CSS rules that do this and what 
+    their impact is on the HTML; this can be old div-class based grids, or new CSS3 grids)
+    IMPACT: This formats the layout of my Images on the blog page.*/
 }
 
 
 #AZPtitle{
     position: relative;
     bottom: 20px;
-/*M3LO8B Demonstrate relative positioning (CSS, note use in your CSS and describe 
-what its impact is on the HTML)
-IMPACT: I used relative position to move my h1 up just a little bit without moving everything else*/    
+    /*M3LO8B Demonstrate relative positioning (CSS, note use in your CSS and describe 
+    what its impact is on the HTML)
+    IMPACT: I used relative position to move my h1 up just a little bit without moving everything else*/    
 }
 
 #lastimage{
@@ -204,10 +239,21 @@ IMPACT: I used relative position to move my h1 up just a little bit without movi
     bottom: 10px;
     left: 700px;
     width: 120%;
-/*M3LO8A Demonstrate absolute positioning (CSS, note use in your CSS and describe what its impact 
-is on the HTML)
-IMPACT: I used absolute positioning to move my image to the center of the page and get rid of the 
-padding under the image (just to demonstrate I know how to use absolute positioning).*/ 
+}
+
+#homeimage{
+    opacity: 0.95;
+    /*M4LO6 Demonstrate the use of opacity/transparency for images (see 4.2) (CSS)
+    Demonstrated by: I applied transparency to the image I have on my home page (its a very subtle change).*/
+}
+
+#ybm{
+    transform: rotate(2deg);
+    /*M4LO8 Demonstrate the use of transformations for 2D or 3D images (CSS, note one of these 
+    two in your CSS and explain its impact on the HTML)
+    Demonstrated by: rotating and image on my blog (transformation for a 2D image)*/
+    position: relative;
+    bottom: 60px;
 }
 
 /*Figure Captions*/
@@ -217,15 +263,17 @@ figure {
     display: block;
     margin: auto;
 }
+
 figure img{
     width: 70%;
     padding: none;
     box-shadow: grey 4px 2px 8px;
-/*M4LO5 Demonstrate the use of text or box shadowing (CSS, note one of these two 
-in your CSS and explain its impact on the HTML)
-Demonstrated by: I've demonstated this by creating a shadow behing my home page image.  There is a shadow behind my box element.
-This gives my html image more dimension on the page.*/
+    /*M4LO5 Demonstrate the use of text or box shadowing (CSS, note one of these two 
+    in your CSS and explain its impact on the HTML)
+    Demonstrated by: I've demonstated this by creating a shadow behing my home page image.  There is a shadow behind my box element.
+    This gives my html image more dimension on the page.*/
 }
+
 figure figcaption{
     font-size: 24px;
     font-family: 'Arial', Helvetica, sans-serif;
@@ -234,16 +282,17 @@ figure figcaption{
     font-style: italic;
     padding: 10px;
     margin-top: 12px;
-/*M4LO1 Demonstrate the use of figure boxes (HTML)
-Demonstrated by:  I've demonstrated this by creating a box around my quote that's located
-underneath my home image*/
+    /*M4LO1 Demonstrate the use of figure boxes (HTML)
+    Demonstrated by:  I've demonstrated this by creating a box around my quote that's located
+    underneath my home image*/
 }
 
 
 /* Navigation Styles */
 
 nav{
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: white;
     background-color: rgb(255, 255, 255);
 
@@ -265,12 +314,12 @@ nav > ul {
 }
 nav > ul > li{
     float: left;
-    width: 23.8%;
+    width: 24%;
     border-style: solid;
-/* M3LO2 Demonstrate floating elements 
-(CSS, note where you have specified a floating element and what its impact is)
-Imapct: this float places the list items in line with eachother on the top of the page.
-*/
+    /* M3LO2 Demonstrate floating elements 
+    (CSS, note where you have specified a floating element and what its impact is)
+    Imapct: this float places the list items in line with eachother on the top of the page.
+    */
 }
 nav > ul > li > a:hover, nav > ul > li > a:active {
     text-decoration: underline;
@@ -290,7 +339,7 @@ nav > ul > li > a:hover, nav > ul > li > a:active {
     margin-left: 0px;
     padding-top: 11.5px;
     padding-bottom: 11.5px;
-    width: 23.8%;
+    width: 25%;
     border-style: solid;
     overflow: none;
 }
@@ -307,6 +356,9 @@ nav > ul > li > a:hover, nav > ul > li > a:active {
     background-color: white;
     border-radius: 0px 0px 8px 8px;
     padding: 10px 14px;
+    /*M3LO8A Demonstrate absolute positioning (CSS, note use in your CSS and describe what its impact 
+    is on the HTML)
+    IMPACT: I used absolute positioning so my drop down menu will stay underneath my portfolio dropdown.*/ 
   }
   
   .dropdown-content a {

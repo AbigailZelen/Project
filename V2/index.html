@@ -38,7 +38,7 @@
           </ul>
         </nav>
       
-        <div id="logo"><a href="index.html"><img src="Img Misc/AbigailZelenPhotographyLogo.JPG" style="width: 100%" alt="Abigail Zelen Photography"/></a></div>
+        <div id="logo"><a href="index.html"><img src="Img Misc/AbigailZelenPhotographyLogo.JPG" style="width: 100%;" alt="Abigail Zelen Photography"/></a></div>
       </header>
 
       <article>
@@ -46,11 +46,16 @@
         <div id="AZPtitle"><h1 style="font-size: 60px">Abigail Zelen Photography</h1></div>
             <section>
                 <figure>
-                  <div><img src="Img Misc/Homepageimage.jpg" alt="Home Image" /></div>
+                  <div id="homeimage"><img src="Img Misc/Homepageimage.jpg" alt="Home Image" usemap="#blog" /></div>
                     <figcaption>"If home is where the heart is, my home is photography."<br />
                     -Abigail Zelen
                     </figcaption>
                 </figure>
+                  <map name="blog">
+                    <area shape="default" coords="0, 0, 60%, 80%" href="blog.html" alt="blog link">
+                    <!--M4LO7 Demonstrate the use of image maps, including determining x and y values (HTML)
+                    Demonstrated by, creating an html link on my home image that will take you to my blog.-->
+                  </map>
                   <div class="row1">
                 
                       <p>I'm so glad you're here!  Here you can find my portfolio, read about my latest adventures, photography
