@@ -1,4 +1,4 @@
-/*•	M4LO2 Demonstrate the use of background images (CSS)
+/*M4LO2 Demonstrate the use of background images (CSS)
 NOTE:  I DID NOT USE A BACKGROUND IMAGE REASON WHY INCLUDED IN PROJECT SITE
 REPORT.*/
 
@@ -185,7 +185,7 @@ body{
 }
 
 
-footer{
+#footer{
     position: fixed;
     bottom: -10px;
     background-color: transparent;
@@ -203,7 +203,6 @@ button{
     text-align: center;
     font-weight: bold;
 }
-
 
 /* Image Styles */
 img{
