@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* 
+   Abigail Zelen Photography
+   Author: Abigail Zelen
+   Date:   5/18/2020
+   Course Name: CIS 155
+
+   Filename: Output.css
+   Purpose of this File: To change the style and formatting depending on the device reading the code.
+*/
+
+/*Base Styles*/
+@media only screen and (max-width: 480px){
+   #footer {
+      text-align: center;
+      position: absolute;
+   }
+}
+
+/*Mobile Styles*/
+@media only screen and (min-width: 481px){
+
+}
+
+/*Tablet Styles*/
+@media only screen and (min-width: 769px){
+
+}
+
+/*Destop Styles*/
