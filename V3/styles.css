@@ -58,7 +58,6 @@ div.row{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 div.row::after{
     clear: both;
     /*M3LO3 Demonstrate a clearing floats (CSS, note where you have used a clear and what its impact is)
@@ -67,7 +66,6 @@ div.row::after{
     content: "";
     display: table;
 }
-
 div[class^="col-"]{
     float: left;
 }
@@ -82,13 +80,11 @@ div.col-1-2-none{
     float: left;
     padding: 5px;
 }
-
 div.row-none{
     border-style: none;
     float: left;
     padding: 5px;
 }
-
 div.row1{
     clear: both;
     border-top-style: double;
@@ -98,6 +94,44 @@ div.row1{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+
+/*Flex Box Styles*/
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    /*M5LO7 Demonstrate use of properties of flexbox containers 
+    (CSS, document what flexbox container properties you use and their impacts, 
+    for one CSS selector using them)
+    The flexbox container used here is the "row wrap" property.  I used this property
+    to wrap my images mainly in my portraits page.  This property takes my images in their listed order
+    and when they go over my percentage the images wrap unto another row.*/
+    background-color: transparent;
+    justify-content: flex-end;
+    /*M5LO6 Demonstrate use of properties of flexbox items (CSS, document what 
+    flexbox item properties you use and their impacts, for one CSS selector using them)
+    The flex-end item imacts (mainly the images on my portraits page) the images
+    so that the leftover flex images are pushed to the right (or the end) of the html
+    page.*/
+    /*M5LO5 Demonstrate the use of flexboxes on a web page (CSS document 
+    where you use flexboxes; explain their impact on the page's layout; this 
+    can be a new page or a redo of an existing page)
+    The use of my flexbox is shown mainly on my portraits page.  This impacts
+    my page's layout by laying out my photographs and the paragraphs about those images.
+    */
+}
+.flex-container > div {
+    width: 24%;
+    margin: 6px;
+    line-height: 20%;
+}
+.flex-container > div > p {
+    background-color: transparent;
+    line-height: 100%;
+    font-size: 22px;
+}
+
 
 /* Structural Styles */
 
@@ -110,7 +144,6 @@ html{
     Demonstrated by: Creating a prefix style extention that will make sure older browsers set the html min height to 100% (not 
     sure if this is exactly what you're looking for so this Objective is listed twice).*/
     min-height: 100%;
-    background: linear-gradient(180deg, rgba(255, 255, 255) 25%, rgba(200, 200, 200));
     /*M4LO4 Demonstrate the use of gradients (CSS)
     Demonstrated by:  I've demonstrated this by creating a gradient that follows the edges of my html 
     document on the left and right size as you scroll.*/
@@ -124,7 +157,6 @@ html{
     on the left or right sides), and an overflow property that only adds a scroll bar where necessary (on 
     the y axix up and down).*/
 }
-
 article{
     color: hsl(0, 0%, 0%);
     color: rgb(0, 0, 0);
@@ -132,35 +164,31 @@ article{
     font-size: larger;
     padding: 3px 3px 3px 3px;
 }
-
 h1, h2{
     font-family: 'Arial', Helvetica, sans-serif;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
+    background-color: transparent;
 }
-
 h3, h4, h5, h6 {
     font-family: 'Arial', Helvetica, sans-serif;
     font-size: 30px;
     font-weight: bold;
     text-align: left;
+    text-indent: 2em;
 }
-
 p {
     color: black;
     font-family: 'Arial', Helvetica, sans-serif;
     text-indent: 2em;
-    font-size: 24px;
+    font-size: 22px;
 }
-
 a[href]{
     font-size: 22px;
     text-decoration: none;
     color: black;
 }
-
-
 body{
     margin-left: auto;
     margin-right: auto;
@@ -168,19 +196,18 @@ body{
     min-width: 400px;
     width: 95%;
 }
-
-
 #footer{
     position: fixed;
     bottom: -10px;
     background-color: transparent;
     margin: 0px;
-    padding: 0px;
+    padding: 5px;
     /*M3LO9 Demonstrate fixed, static, or inherited positioning (CSS, note explicit use of one of 
     the three in your CSS and what the impact is on the HTML)
     DEMONSTRATE FIXED POSITION: Here I demonstrated fixed position as my footer is in a fixed position
     and will scroll with the page*/    
 }
+
 
 /*Specific Element Styles*/
 
@@ -189,7 +216,9 @@ button{
     font-weight: bold;
 }
 
+
 /* Image Styles */
+
 img{
     display: grid;
     margin-left: auto;
@@ -197,7 +226,6 @@ img{
     width: 100%;
     padding: 13px 13px 13px 13px;
 }
-
 .Blog{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -207,8 +235,6 @@ img{
     their impact is on the HTML; this can be old div-class based grids, or new CSS3 grids)
     IMPACT: This formats the layout of my Images on the blog page.*/
 }
-
-
 #AZPtitle{
     position: relative;
     bottom: 20px;
@@ -216,28 +242,18 @@ img{
     what its impact is on the HTML)
     IMPACT: I used relative position to move my h1 up just a little bit without moving everything else*/    
 }
-
 #lastimage{
     position: relative;
     bottom: 10px;
     left: 700px;
     width: 120%;
 }
-
 #homeimage{
     opacity: 0.95;
     /*M4LO6 Demonstrate the use of opacity/transparency for images (see 4.2) (CSS)
     Demonstrated by: I applied transparency to the image I have on my home page (its a very subtle change).*/
 }
 
-#ybm{
-    transform: rotate(2deg);
-    /*M4LO8 Demonstrate the use of transformations for 2D or 3D images (CSS, note one of these 
-    two in your CSS and explain its impact on the HTML)
-    Demonstrated by: rotating and image on my blog (transformation for a 2D image)*/
-    position: relative;
-    bottom: 60px;
-}
 
 /*Figure Captions*/
 
@@ -246,7 +262,6 @@ figure {
     display: block;
     margin: auto;
 }
-
 figure img{
     width: 70%;
     padding: 0px;
@@ -256,7 +271,6 @@ figure img{
     Demonstrated by: I've demonstated this by creating a shadow behing my home page image.  There is a shadow behind my box element.
     This gives my html image more dimension on the page.*/
 }
-
 figure figcaption{
     font-size: 24px;
     font-family: 'Arial', Helvetica, sans-serif;
@@ -273,59 +287,93 @@ figure figcaption{
 
 /* Navigation Styles */
 
-nav{
+nav.horizontal {
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: white;
-    background-color: rgb(255, 255, 255);
-
 }
-nav > ul > li{
+nav.horizontal ul li{
     display: block;
     font-size: 24px;
     font-weight: bold;
     font-family: 'Arial', Helvetica, sans-serif;
     text-align: center;
     text-decoration: none;
-    margin: 0px;
-    padding: 12px;
-}
-
-nav > ul {
-    display: block;
-    list-style-type: none;
-}
-nav > ul > li{
     float: left;
-    width: 23.2%;
-    border-style: solid;
+    background-color: white;
+    width: 23.5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 6px;
     /* M3LO2 Demonstrate floating elements 
     (CSS, note where you have specified a floating element and what its impact is)
     Imapct: this float places the list items in line with eachother on the top of the page.
     */
 }
-nav > ul > li > a:hover, nav > ul > li > a:active {
-    text-decoration: underline;
-    background-color: white;
-}
+nav.horizontal ul {
+    display: block;
+    list-style-type: none;
 
+}
+nav.horizontal ul li {
+    border: solid black;
+}
+nav.horizontal:visited a:active, nav.horizontal ul li {
+    background-color: white;
+    color: black;
+}
+nav.horizontal::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+nav.horizontal a {
+    color: black;
+}
 
 
 /* Nav Dropdown */
 
-ul.dropdownmenu{
-    float: left;
+    /*M5LO4 Use CSS for pull-down menus 
+    (or collapsible/expandable areas) (CSS, note where the menu is on 
+    your site and how it behaves).
+    Where my pull down is located: My pull-down menu is located in my nav across
+    all of my html pages.  
+    How it behaves:  My pull-down is hidden until you hover your curser over
+    the "portfolio".  When you hover your curser over the "portfolio" the submenu options,
+    macro, portfolio, and nature & landscapes show up.
+    */
+.dropdownmenu {
+    position: relative;
+    display: inline;
+    background-color: white;
+}
+.dropdown {
     display: none;
-    width: 25%;
+    position: absolute;
+    float: none;
+    background-color: white;
+    min-width: 23.5%;
+    padding: 2px;
+    z-index: 1;
 }
-
-ul.dropdownmenu > li {
-    text-decoration: none;
-}
-
-a.dropdownmenu:hover+ul.dropdown, ul.dropdown:hover{
+.dropdown a {
+    font-weight: none;
+    font-size: 20px;
     display: block;
+    padding: 10px;
+    margin: 5px;
+    border: none;
 }
-
-
-  
+#ddlinks > li {
+    border: none;
+    padding: 5px;
+}
+.dropdownmenu:hover .dropdown {
+    display: block;
+    border-right: solid black;
+    border-left: solid black;
+    border-bottom: solid black;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-top: 18px;
+}

@@ -4,7 +4,7 @@
    <!--=
    Abigail Zelen Photography
    Author: Abigail Zelen
-   Date:   5/18/2020
+   Date:   5/24/2020
    Course Name: CIS 155
 
    Filename: macro.html
@@ -24,19 +24,25 @@
   <body>
 
     <header>
-      <nav>
+      <nav class="horizontal">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#" class="dropdownportfolio">Portfolio &dtrif;</a></li>
-            <ul>
-              <li><a href="macro.html">Macro</a></li>
-              <li><a href="portraits.html">Portraits</a></li>
-              <li><a href="naturelandscapes.html">Nature & Landscapes</a></li>
-            </ul>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="about.html">Contact/About</a></li>
+            <li><a href="index.html" style="text-decoration: none;">Home</a></li>
+            <div class="dropdownmenu"> 
+                <li><a href="#" style="text-decoration: none;">Portfolio &dtrif;</a>
+                <div class="dropdown">
+                    <ul id="ddlinks">
+                        <li><a href="macro.html" style="text-decoration: none;">Macro</a></li>
+                        <li><a href="portraits.html" style="text-decoration: none;">Portraits</a></li>
+                        <li><a href="naturelandscapes.html" style="text-decoration: none;">Nature & Landscapes</a></li>
+                    </ul>
+                </div>
+            </li>
+            </div>
+            <li><a href="blog.html" style="text-decoration: none;">Blog</a></li>
+            <li><a href="about.html" style="text-decoration: none;">Contact/About</a></li>
         </ul>  
       </nav>
+      
       <a href="index.html"><img src="ImgMisc/AbigailZelenPhotographyLogo.JPG" style="width: 100%" alt="Abigail Zelen Photography"/></a>
     
     </header>
@@ -44,10 +50,70 @@
     <article>
 
       <h2>Macro:</h2>
-      <!--THIS PORTFOLIO IS A WORK IN PROGRESS AND MORE OF A PLACE HOLDER THAN ANYTHING-->
-      
-        <p>Macro.
-        </p>
+        <div class="row1">
+          <div class="flex-container">
+            <div>
+              <p>
+                Macro is one of my very favorite styles of photography.  
+                It gives you a chance to take a closer look at something and notice details.  
+              </p>
+            </div>
+            <div>
+              <a target="_blank" href="ImgMacro/MacroFrogWithFlowers.jpg">
+                <img src="ImgMacro/MacroFrogWithFlowers.jpg" />
+              </a>
+            </div>
+            <div>
+              <a target="_blank" href="ImgMacro/MacroButterfly.jpg">
+                <img src="ImgMacro/MacroButterfly.jpg" />
+              </a>
+            </div>
+            <div>
+              <a target="_blank" href="ImgMacro/MacroFrog.jpg">
+                <img src="ImgMacro/MacroFrog.jpg" />
+              </a>
+            </div>
+            <div>
+              <a target="_blank" href="ImgMacro/MacroBabyHummingBird.jpg">
+                <img src="ImgMacro/MacroBabyHummingBird.jpg" />
+              </a>
+            </div>
+          </div>
+        </div>  
+
+        <h2>Macro Stacks:</h2>
+        <div class="row1">
+          <div class="flex-container">
+            <div>
+              <p>
+                Macro Stacks are put together using a series of images.  These images are composed of 
+                around 20 images each.  Each image has something different in focus giving you a fully 
+                focused image.  It also creates a greater depth of field as the subject is very focused 
+                and the background is fully out of focus.
+              </p>
+            </div>
+            <div>
+              <a target="_blank" href="ImgMacro/MacroStackAirPlantCleanBackground.jpg">
+                <img src="ImgMacro/MacroStackAirPlantCleanBackground.jpg" />
+              </a>
+            </div>
+            <div>
+              <a target="_blank" href="ImgMacro/MacroStackAloe.jpg">
+                <img src="ImgMacro/MacroStackAloe.jpg" />
+              </a>
+            </div>
+            <div>
+              <a target="_blank" href="ImgMacro/MacroStackAloe3.jpg">
+                <img src="ImgMacro/MacroStackAloe3.jpg" />
+              </a>
+            </div>
+            <div>
+              <a target="_blank" href="ImgMacro/MacroStackCactus.jpg">
+                <img src="ImgMacro/MacroStackCactus.jpg" />
+              </a>
+            </div>
+          </div>
+        </div>  
 
     </article>
       <footer id="footer">

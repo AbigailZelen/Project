@@ -4,7 +4,7 @@
    <!--
    Abigail Zelen Photography
    Author: Abigail Zelen
-   Date:   5/18/2020
+   Date:   5/24/2020
    Course Name: CIS 155
 
    Filename: about.html
@@ -23,19 +23,25 @@
   </head>
     <body>
       <header>
-        <nav>
+        <nav class="horizontal">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#" class="dropdownportfolio">Portfolio &dtrif;</a></li>
-              <ul>
-                <li><a href="macro.html">Macro</a></li>
-                <li><a href="portraits.html">Portraits</a></li>
-                <li><a href="naturelandscapes.html">Nature & Landscapes</a></li>
-              </ul>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">Contact/About</a></li>
+              <li><a href="index.html" style="text-decoration: none;">Home</a></li>
+              <div class="dropdownmenu"> 
+                  <li><a href="#" style="text-decoration: none;">Portfolio &dtrif;</a>
+                  <div class="dropdown">
+                      <ul id="ddlinks">
+                          <li><a href="macro.html" style="text-decoration: none;">Macro</a></li>
+                          <li><a href="portraits.html" style="text-decoration: none;">Portraits</a></li>
+                          <li><a href="naturelandscapes.html" style="text-decoration: none;">Nature & Landscapes</a></li>
+                      </ul>
+                  </div>
+              </li>
+              </div>
+              <li><a href="blog.html" style="text-decoration: none;">Blog</a></li>
+              <li><a href="about.html" style="text-decoration: none;">Contact/About</a></li>
           </ul>  
         </nav>
+        
         <a href="index.html"><img src="ImgMisc/AbigailZelenPhotographyLogo.JPG" style="width: 100%" alt="Abigail Zelen Photography"/></a>
     
       </header>

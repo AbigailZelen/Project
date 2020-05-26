@@ -20,7 +20,6 @@ footer, address{
     I've overided the browser default margins and paddings. */
     display: block;
     background-color: white;
-    font-size: 100%;
     margin: 8px;
     padding: 2px;
     -webkit-box-sizing: border-box;
