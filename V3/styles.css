@@ -284,6 +284,25 @@ figure figcaption{
     underneath my home image*/
 }
 
+/*Table Styles*/
+
+table {
+    background-color: rgb(240, 240, 240);
+    font-size: 20px;
+    width: 98%;
+    padding: none; 
+}
+table, th, td, tr {
+    border: 2px solid black;
+}
+th {
+    vertical-align: top;
+}
+/*M6LO7 Demonstrate how to format a table with CSS 
+(CSS, group your table styles together and note the overall impact they have on the HTML)
+Impact: the background color is light grey, the font size is different, the width size is not 100% so it gives it a cute
+outline style, the text in my first column (th) is aligned towards the top.*/
+
 
 /* Navigation Styles */
 
