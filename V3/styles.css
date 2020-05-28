@@ -290,7 +290,7 @@ table {
     background-color: rgb(240, 240, 240);
     font-size: 20px;
     width: 98%;
-    padding: none; 
+    padding: 0px;
 }
 table, th, td, tr {
     border: 2px solid black;
@@ -376,7 +376,6 @@ nav.horizontal a {
     z-index: 1;
 }
 .dropdown a {
-    font-weight: none;
     font-size: 20px;
     display: block;
     padding: 10px;

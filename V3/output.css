@@ -26,8 +26,8 @@
 
    /*Navigation Styles*/
    nav.horizontal {
-      padding-top: none;
-      padding-bottom: none;
+      padding-top: 0px;
+      padding-bottom: 0px;
   }
    nav.horizontal ul li{
       display: block;
@@ -39,9 +39,9 @@
       float: left;
       background-color: white;
       width: 45.5%;
-      padding-top: none;
-      padding-bottom: none;
-      margin: none;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin: 0px;
       border: none;
    }
    .dropdown {
@@ -58,8 +58,8 @@
       border-radius: 15px;
       margin-right: auto;
       margin-left: auto;
-      margin-top: none;
-      margin-bottom: none;
+      margin-top: 0px;
+      margin-bottom: 0px;
    }
    div.row::after{
       clear: both;
