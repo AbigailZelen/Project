@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* 
+   Abigail Zelen Photography
+   Author: Abigail Zelen
+   Date:   5/18/2020
+   Course Name: CIS 155
+
+   Filename: Reset.css
+   Purpose of this File: To have reset styles that will be common accross all of my html documents.
+*/
+
+/* Reset Styles*/
+
+body, article, header, html, p, em,
+footer, address{
+    /* M3LO1 Demonstrate the use of a CSS reset style sheet (CSS, note where you have CSS reset rules)
+    Demonstrated by: Here I've created a starting point for all my html files that will override Browswer defaults.
+    I've done this by setting the display to a block (which isn't a default), the background to white, font size, and
+    I've overided the browser default margins and paddings. */
+    display: block;
+    background-color: white;
+    margin: 8px;
+    padding: 2px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    /*M3LO11 Demonstrate -prefix- style browser extensions use in CSS (CSS note the use in your CSS and what the purpose is)
+    Demonstrated by: Creating a prefix style extension that makes sure the border box will be appied to older
+    browsers.  (Since this is the same as the example given in the book, I've listed it twice to demonstate this
+    concept not directly from the book).*/
+}

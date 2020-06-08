@@ -1,0 +1,461 @@
+@charset "utf-8";
+/* 
+   Abigail Zelen Photography
+   Author: Abigail Zelen
+   Date:   5/18/2020
+   Course Name: CIS 155
+
+   Filename: Styles.css
+   Purpose of this File: To style and format my html documents.
+*/
+
+/*M4LO2 Demonstrate the use of background images (CSS)
+NOTE:  I DID NOT USE A BACKGROUND IMAGE REASON WHY INCLUDED IN PROJECT SITE
+REPORT.*/
+@font-face {
+    font-family: Gadget;
+    src: url('Gadget.ttf') format('truetype');
+}
+@font-face{
+    font-family: Alex Brush;
+    src: url('AlexBrush-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: Euphorigenic;
+    src: url('euphorigenic.ttf') format('truetype');
+}
+
+/* Citation for Fonts:
+Gadget:
+Www.fontpalace.com. (n.d.). Download Gadget Font - Free Font Download. 
+Retrieved from https://www.fontpalace.com/font-download/Gadget/ 
+OTHER FONTS:
+Google Web Fonts. (n.d.). Retrieved from https://www.1001fonts.com/google-web-fonts.html?page=6&items=10
+*/
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   V1 Assignment
+   
+   Author: Abigail Zelen
+   Date: 5/22/2020
+   
+   Filename: styles.css
+   Purpose of this file:  To change and format my html pages by using css.
+*/
+
+/*Form Styles*/
+form {
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 98.5%;
+}
+div.contactrow {
+    width: 98%;
+    text-indent: 2em;
+}
+textarea {
+    resize: none;
+    width: 50%;
+    height: 150px;
+    overflow: auto;
+    font-size: 17px;
+    margin-top: 5px;
+}
+/*M7LO11 Demonstrate how to format a form with CSS 
+(group your form styles together in your CSS file, and document their 
+overall impact on the form)
+Overall Impact:  I've used Css to change the font size on the form, put each box
+on it's own line, changed the width so it fit's within the page layout better,
+created overflow appropriate for my text box, and made it so my text area had a set
+size and would not resize.  All of this helped me achieve the look I wanted shown on my
+wireframe.*/
+
+/* Video Styles */
+
+video {
+    width: 100%;
+    height: 100%;
+    /*•	M8LO12 Demonstrate how to format media with CSS (CSS, group your media styles 
+    together and describe their overall impact on the media feature of your page)
+    Impact: The width and height are used to get rid of the default settings/layout it
+    had without any css.*/
+}
+
+/* Grid Styles */
+
+div.row{
+    clear: both;
+    border-style: solid;
+    /*M4LO3 Demonstrate the use of rounded corners for borders (CSS)
+    Domatrated by: creating a radious around the border of my CSS grid on my About/contact page.*/
+    border-radius: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div.row::after{
+    clear: both;
+    /*M3LO3 Demonstrate a clearing floats (CSS, note where you have used a clear and what its impact is)
+    Demonstrated by: placing a clear: both elemenent so that my grid won't be displayed until all the other elements
+    have been cleared.*/
+    content: "";
+    display: table;
+}
+div[class^="col-"]{
+    float: left;
+}
+
+div.row {width: 100%}
+div.col-1-2{width: 50%}
+div.col-1-2-none{width: 49%}
+div.row-none{width: 98.5%}
+
+div.col-1-2-none{
+    border-style: none;
+    float: left;
+    padding: 5px;
+}
+div.row-none{
+    border-style: none;
+    float: left;
+    padding: 5px;
+}
+div.row1{
+    clear: both;
+    border-top-style: double;
+    border-bottom-style: double;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div.rowdma {
+    border-top-style: double;
+    border-bottom-style: none;
+}
+
+/*Flex Box Styles*/
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    /*M5LO7 Demonstrate use of properties of flexbox containers 
+    (CSS, document what flexbox container properties you use and their impacts, 
+    for one CSS selector using them)
+    The flexbox container used here is the "row wrap" property.  I used this property
+    to wrap my images mainly in my portraits page.  This property takes my images in their listed order
+    and when they go over my percentage the images wrap unto another row.*/
+    background-color: transparent;
+    justify-content: flex-end;
+    /*M5LO6 Demonstrate use of properties of flexbox items (CSS, document what 
+    flexbox item properties you use and their impacts, for one CSS selector using them)
+    The flex-end item imacts (mainly the images on my portraits page) the images
+    so that the leftover flex images are pushed to the right (or the end) of the html
+    page.*/
+    /*M5LO5 Demonstrate the use of flexboxes on a web page (CSS document 
+    where you use flexboxes; explain their impact on the page's layout; this 
+    can be a new page or a redo of an existing page)
+    The use of my flexbox is shown mainly on my portraits page.  This impacts
+    my page's layout by laying out my photographs and the paragraphs about those images.
+    */
+}
+.flex-container > div {
+    width: 24%;
+    margin: 6px;
+    line-height: 20%;
+}
+.flex-container > div > p {
+    background-color: transparent;
+    line-height: 100%;
+    font-size: 22px;
+}
+.flex-containerdma {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: transparent;
+    justify-content: flex-end;
+}
+.flex-containerdma > div {
+    width: 32.5%;
+    margin: 6px;
+    line-height: 20%;
+}
+.flex-containerdma > div > p {
+    background-color: transparent;
+    line-height: 100%;
+    font-size: 22px;
+}
+/* Structural Styles */
+
+html{
+    height: auto;
+    -webkit-min-height: 100%;
+    -moz-min-height: 100%;
+    -o-min-height: 100%;
+    /*M3LO11 Demonstrate -prefix- style browser extensions use in CSS (CSS note the use in your CSS and what the purpose is)
+    Demonstrated by: Creating a prefix style extention that will make sure older browsers set the html min height to 100% (not 
+    sure if this is exactly what you're looking for so this Objective is listed twice).*/
+    min-height: 100%;
+    /*M4LO4 Demonstrate the use of gradients (CSS)
+    Demonstrated by:  I've demonstrated this by creating a gradient that follows the edges of my html 
+    document on the left and right size as you scroll.*/
+    width: 100%;
+    background-repeat: no-repeat;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*M3LO10 Demonstrate an overflow setting (CSS, note explicit use of an overflow 
+    setting in your CSS and what the impact is on the HTML)
+    Demonstrated by: creating an overflow property that hides overflow on the x axis (any overflow
+    on the left or right sides), and an overflow property that only adds a scroll bar where necessary (on 
+    the y axix up and down).*/
+}
+article{
+    color: hsl(0, 0%, 0%);
+    color: rgb(0, 0, 0);
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: larger;
+    padding: 3px 3px 3px 3px;
+}
+h1, h2{
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+}
+h3, h4, h5 {
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 2em;
+}
+h6 {
+    font-family: "Arial", Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+    padding: 14px;
+}
+p {
+    color: black;
+    font-family: 'Arial', Helvetica, sans-serif;
+    text-indent: 2em;
+    font-size: 22px;
+}
+a[href]{
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+body{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 2500px;
+    min-width: 400px;
+    width: 95%;
+}
+#footer{
+    position: fixed;
+    bottom: -10px;
+    background-color: transparent;
+    margin: 0px;
+    padding-top: 5px;
+    width: 100%;
+    text-align: center;
+    /*M3LO9 Demonstrate fixed, static, or inherited positioning (CSS, note explicit use of one of 
+    the three in your CSS and what the impact is on the HTML)
+    DEMONSTRATE FIXED POSITION: Here I demonstrated fixed position as my footer is in a fixed position
+    and will scroll with the page*/    
+}
+
+
+/*Specific Element Styles*/
+
+button{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Image Styles */
+
+img{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 13px 13px 13px 13px;
+}
+.Blog{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr;
+    grid-auto-flow: row;
+    /*M3LO6 Demonstrate formatting a grid (CSS, note the CSS rules that do this and what 
+    their impact is on the HTML; this can be old div-class based grids, or new CSS3 grids)
+    IMPACT: This formats the layout of my Images on the blog page.*/
+}
+#AZPtitle{
+    position: relative;
+    bottom: 20px;
+    /*M3LO8B Demonstrate relative positioning (CSS, note use in your CSS and describe 
+    what its impact is on the HTML)
+    IMPACT: I used relative position to move my h1 up just a little bit without moving everything else*/    
+}
+#lastimage{
+    position: relative;
+    bottom: 10px;
+    left: 700px;
+    width: 120%;
+}
+#homeimage{
+    opacity: 0.95;
+    /*M4LO6 Demonstrate the use of opacity/transparency for images (see 4.2) (CSS)
+    Demonstrated by: I applied transparency to the image I have on my home page (its a very subtle change).*/
+}
+
+/*Figure Captions*/
+
+figure {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+figure img{
+    width: 70%;
+    padding: 0px;
+    box-shadow: grey 4px 2px 8px;
+    /*M4LO5 Demonstrate the use of text or box shadowing (CSS, note one of these two 
+    in your CSS and explain its impact on the HTML)
+    Demonstrated by: I've demonstated this by creating a shadow behing my home page image.  There is a shadow behind my box element.
+    This gives my html image more dimension on the page.*/
+}
+figure figcaption{
+    font-size: 24px;
+    font-family: 'Arial', Helvetica, sans-serif;
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+    margin-top: 12px;
+    /*M4LO1 Demonstrate the use of figure boxes (HTML)
+    Demonstrated by:  I've demonstrated this by creating a box around my quote that's located
+    underneath my home image*/
+}
+
+/*Table Styles*/
+
+table {
+    background-color: rgb(240, 240, 240);
+    font-size: 20px;
+    width: 98%;
+    padding: 0px;
+}
+table, th, td, tr {
+    border: 2px solid black;
+}
+th {
+    vertical-align: top;
+}
+/*M6LO7 Demonstrate how to format a table with CSS 
+(CSS, group your table styles together and note the overall impact they have on the HTML)
+Impact: the background color is light grey, the font size is different, the width size is not 100% so it gives it a cute
+outline style, the text in my first column (th) is aligned towards the top.*/
+
+
+/* Navigation Styles */
+
+nav.horizontal {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+nav.horizontal ul li{
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Arial', Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    background-color: white;
+    width: 23.5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 6px;
+    /* M3LO2 Demonstrate floating elements 
+    (CSS, note where you have specified a floating element and what its impact is)
+    Imapct: this float places the list items in line with eachother on the top of the page.
+    */
+}
+nav.horizontal ul {
+    display: block;
+    list-style-type: none;
+
+}
+nav.horizontal ul li {
+    border: solid black;
+}
+nav.horizontal:visited a:active, nav.horizontal ul li {
+    background-color: white;
+    color: black;
+}
+nav.horizontal::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+nav.horizontal a {
+    color: black;
+}
+
+
+/* Nav Dropdown */
+
+    /*M5LO4 Use CSS for pull-down menus 
+    (or collapsible/expandable areas) (CSS, note where the menu is on 
+    your site and how it behaves).
+    Where my pull down is located: My pull-down menu is located in my nav across
+    all of my html pages.  
+    How it behaves:  My pull-down is hidden until you hover your curser over
+    the "portfolio".  When you hover your curser over the "portfolio" the submenu options,
+    macro, portfolio, and nature & landscapes show up.
+    */
+.dropdownmenu {
+    position: relative;
+    display: inline;
+    background-color: white;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    float: none;
+    background-color: white;
+    min-width: 23.5%;
+    padding: 2px;
+    z-index: 1;
+}
+.dropdown a {
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+}
+#ddlinks > li {
+    border: none;
+    padding: 5px;
+}
+.dropdownmenu:hover .dropdown {
+    display: block;
+    border-right: solid black;
+    border-left: solid black;
+    border-bottom: solid black;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-top: 18px;
+}

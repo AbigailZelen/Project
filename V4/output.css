@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* 
+   Abigail Zelen Photography
+   Author: Abigail Zelen
+   Date:   5/18/2020
+   Course Name: CIS 155
+
+   Filename: Output.css
+   Purpose of this File: To change the style and formatting depending on the device reading the code.
+*/
+
+/*Base Styles*/
+@media only screen and (max-width: 480px){
+   
+   /*M5LO3 Use media queries to format a page differently for phones vs. PCs. 
+   (CSS, note where these are in your CSS and describe the overall impact they have on the site)
+   My Media Queries are located right here in my CSS.  I used Media Queries to mainly format my grid and flex layouts
+   so that on a phone, the images will be full size and easier to see.  I also reformated my navigation to to be on two lines on a phone
+   so that it's easier to click.*/
+
+   /*Footer Styles*/
+   #footer {
+      text-align: center;
+      position: static;
+   }
+
+   /*Navigation Styles*/
+   nav.horizontal {
+      padding-top: 0px;
+      padding-bottom: 0px;
+  }
+   nav.horizontal ul li{
+      display: block;
+      font-size: 12px;
+      font-weight: normal;
+      font-family: 'Arial', Helvetica, sans-serif;
+      text-align: center;
+      text-decoration: none;
+      float: left;
+      background-color: white;
+      width: 45.5%;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin: 0px;
+      border: none;
+   }
+   .dropdown {
+      display: none;
+      position: absolute;
+      float: none;
+      background-color: white;
+  }
+
+  /*Grid Styles*/
+   div.row{
+      clear: both;
+      border-style: solid;
+      border-radius: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 0px;
+      margin-bottom: 0px;
+   }
+   div.row::after{
+      clear: both;
+      content: "";
+      display: table;
+   }
+   div[class^="col-"]{
+      float: left;
+   }
+   div.row {width: 100%}
+   div.col-1-2{width: 92%}
+   div.col-1-2-none{width: 92%}
+   div.row-none{width: 92%}
+
+   /*Flex Styles*/
+  .flex-container > div {
+      width: 93%;
+  }
+  
+   /*Image Styles*/
+   figure {
+      width: 100%;
+   }
+   figure img{
+      width: 100%;
+   }
+   figure figcaption{
+      font-size: 18px;
+   }
+
+}
