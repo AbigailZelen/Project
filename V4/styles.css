@@ -44,6 +44,35 @@ Google Web Fonts. (n.d.). Retrieved from https://www.1001fonts.com/google-web-fo
    Purpose of this file:  To change and format my html pages by using css.
 */
 
+/* Transition Styles */
+
+nav.hovizontal {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Arial', Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    background-color: white;
+    width: 23.5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 6px;
+    
+}
+nav.horizontal a:hover{  
+    color: rgb(110, 110, 110);
+    transition: color 0.5s ease-in;
+    /*M8LO10 Demonstrate a CSS animation or transition (CSS, 
+    identify which is being done and its impact on the rendered HTML; 
+    note it has to include a time aspect, not be immediate)
+    Demonstrated by: changing the color of the text, after about 0.5 seconds
+    from black to dark gray.*/
+}
+    
+
+
 /*Form Styles*/
 form {
     font-size: 20px;
