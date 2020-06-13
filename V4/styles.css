@@ -217,6 +217,7 @@ div.rowdma {
     line-height: 100%;
     font-size: 22px;
 }
+
 /* Structural Styles */
 
 html{
@@ -274,7 +275,7 @@ p {
     color: black;
     font-family: 'Arial', Helvetica, sans-serif;
     text-indent: 2em;
-    font-size: 22px;
+    font-size: 20px;
 }
 a[href]{
     font-size: 22px;
@@ -332,6 +333,7 @@ img{
 #AZPtitle{
     position: relative;
     bottom: 20px;
+    font-size: 60px;
     /*M3LO8B Demonstrate relative positioning (CSS, note use in your CSS and describe 
     what its impact is on the HTML)
     IMPACT: I used relative position to move my h1 up just a little bit without moving everything else*/    
@@ -464,8 +466,8 @@ nav.horizontal a {
     position: absolute;
     float: none;
     background-color: white;
-    min-width: 23.5%;
-    padding: 2px;
+    min-width: 25%;
+    padding: 0px;
     z-index: 1;
 }
 .dropdown a {

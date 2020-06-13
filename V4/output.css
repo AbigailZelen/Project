@@ -10,7 +10,7 @@
 */
 
 /*Base Styles*/
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 880px){
    
    /*M5LO3 Use media queries to format a page differently for phones vs. PCs. 
    (CSS, note where these are in your CSS and describe the overall impact they have on the site)
@@ -18,6 +18,19 @@
    so that on a phone, the images will be full size and easier to see.  I also reformated my navigation to to be on two lines on a phone
    so that it's easier to click.*/
 
+   /* Font Styles */
+   p{
+      font-size: 18px;
+   }
+   h1, h2 {
+      font-size: 20px;
+   }
+   h3, h4, h5 {
+      font-size: 20px;
+   }
+   h6 {
+      font-size: 22px;
+   }
    /*Footer Styles*/
    #footer {
       text-align: center;
@@ -38,7 +51,7 @@
       text-decoration: none;
       float: left;
       background-color: white;
-      width: 45.5%;
+      width: 50%;
       padding-top: 0px;
       padding-bottom: 0px;
       margin: 0px;
@@ -49,7 +62,24 @@
       position: absolute;
       float: none;
       background-color: white;
+      padding-top: 0px;
   }
+  .dropdown a {
+      font-size: 18px;
+      display: block;
+      padding: 10px;
+      margin: 5px;
+      border: none;
+ }
+   #ddlinks > li {
+      border: none;
+      padding: 5px;
+ }
+   .dropdownmenu:hover .dropdown {
+      display: block;
+      border-style: none;
+      margin-top: 0px
+ }
 
   /*Grid Styles*/
    div.row{
@@ -73,6 +103,29 @@
    div.col-1-2{width: 92%}
    div.col-1-2-none{width: 92%}
    div.row-none{width: 92%}
+
+   /* DMA Div Styles */
+
+   div.rowdma {
+      border-top-style: double;
+      border-bottom-style: none;
+  }
+  .flex-containerdma > div {
+      width: 100%;
+      margin: 6px;
+      padding-right: 1em;
+      line-height: none;
+  }
+  .flex-containerdma > div > p {
+      background-color: transparent;
+      line-height: 100%;
+      font-size: 18px;
+  }
+  .flex-containerdma > div > h1, h2, h3, h4, h5, h6 {
+     font-size: 22px;
+     font-weight: bold;
+  }
+
 
    /*Flex Styles*/
   .flex-container > div {
