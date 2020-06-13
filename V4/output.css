@@ -20,7 +20,7 @@
 
    /* Font Styles */
    p {
-      font-size: 18px;
+      font-size: 20px;
    }
    h1, h2 {
       font-size: 20px;
@@ -40,31 +40,18 @@
 
    /*Navigation Styles*/
    nav.horizontal {
-      padding-top: 0px;
-      padding-bottom: 0px;
-      display: inline;
-      
+      padding-top: 0.1%;
+      padding-bottom: 0.1%;
   }
-   nav.horizontal ul li{
-      display: inline;
-      font-size: 12px;
-      font-weight: normal;
-      font-family: 'Arial', Helvetica, sans-serif;
-      text-align: center;
-      text-decoration: none;
-      float: left;
-      background-color: white;
-      width: 45.5%;
-      padding-top: 0px;
-      padding-bottom: 0px;
-      margin: 0px;
-      border: none;
+  nav.horizontal ul li{
+   font-size: 20px;
+   width: 45.5%;
+   padding-top: 0.5%;
+   padding-bottom: 0.5%;
+   margin: 0.1%;
    }
    .dropdown {
-      display: none;
-      position: absolute;
-      float: none;
-      background-color: white;
+      min-width: 60%;
   }
   .dropdownmenu:hover .dropdown {
    display: block;
@@ -73,8 +60,9 @@
    border-bottom: none;
    border-bottom-left-radius: 10px;
    border-bottom-right-radius: 10px;
-   margin-top: 0px;
-}
+   margin-top: 0%;
+   padding-top: 5px;
+  }
 
   /*Grid Styles*/
    div.row{

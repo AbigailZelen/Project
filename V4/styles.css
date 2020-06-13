@@ -488,5 +488,6 @@ nav.horizontal a {
     border-bottom: solid black;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    margin-top: 0.01%;
+    padding-top: 12px;
+    margin-top: 11px;
 }
