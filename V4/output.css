@@ -10,7 +10,7 @@
 */
 
 /*Base Styles*/
-@media only screen and (max-width: 580px){
+@media only screen and (max-width: 850px){
    
    /*M5LO3 Use media queries to format a page differently for phones vs. PCs. 
    (CSS, note where these are in your CSS and describe the overall impact they have on the site)
