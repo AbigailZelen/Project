@@ -51,6 +51,9 @@
       margin: 0.1%;
       border-style: none;
    }
+   .dropdown {
+      min-width: 50%;
+  }
   .dropdownmenu:hover .dropdown {
       display: block;
       border-right: none;
@@ -61,13 +64,13 @@
       margin-top: 0%;
       padding-top: 5px;
   }
-
   .dropdown a {
       font-size: 20px;
       display: block;
-      padding: 0.1%;
-      margin: 0.1%;
+      padding: 0.01%;
+      margin: 0.01%;
       border: none;
+      text-decoration: underline;
    }
 
   /*Grid Styles*/
