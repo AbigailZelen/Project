@@ -44,15 +44,13 @@
       padding-bottom: 0.1%;
   }
   nav.horizontal ul li{
-   font-size: 20px;
-   width: 45.5%;
-   padding-top: 0.5%;
-   padding-bottom: 0.5%;
-   margin: 0.1%;
+      font-size: 20px;
+      width: 45.5%;
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+      margin: 0.1%;
+      border-style: none;
    }
-   .dropdown {
-      min-width: 50%;
-  }
   .dropdownmenu:hover .dropdown {
       display: block;
       border-right: none;
@@ -63,14 +61,15 @@
       margin-top: 0%;
       padding-top: 5px;
   }
+
   .dropdown a {
-      font-size: 18px;
+      font-size: 20px;
       display: block;
-      padding: 0.01%;
-      margin: 0.01%;
+      padding: 0.1%;
+      margin: 0.1%;
       border: none;
-      display: block;
-      text-decoration: underline;
+      min-width: 80%;
+
    }
 
   /*Grid Styles*/
