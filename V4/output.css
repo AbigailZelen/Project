@@ -10,7 +10,7 @@
 */
 
 /*Base Styles*/
-@media only screen and (min-width: 150px) and (max-width: 1000px){
+@media only screen and (min-width: 150px) and (max-width: 1200px){
    
    /*M5LO3 Use media queries to format a page differently for phones vs. PCs. 
    (CSS, note where these are in your CSS and describe the overall impact they have on the site)
@@ -45,14 +45,14 @@
   }
   nav.horizontal ul li{
       font-size: 20px;
-      width: 45.5%;
+      width: 48.5%;
       padding-top: 0.5%;
       padding-bottom: 0.5%;
       margin: 0.1%;
       border-style: none;
    }
    .dropdown {
-      min-width: 50%;
+      min-width: 100%;
   }
   .dropdownmenu:hover .dropdown {
       display: block;
