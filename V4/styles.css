@@ -471,15 +471,15 @@ nav.horizontal a {
     z-index: 1;
 }
 .dropdown a {
-    font-size: 18px;
+    font-size: 20px;
     display: block;
-    padding: 0.01%;
-    margin: 0.01%;
+    padding: 0.5%;
+    margin: 0.1%;
     border: none;
 }
 #ddlinks > li {
     border: none;
-    padding: 0.01%;
+    padding: 0.5%;
 }
 .dropdownmenu:hover .dropdown {
     display: block;
