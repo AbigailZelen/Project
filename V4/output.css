@@ -20,16 +20,16 @@
 
    /* Font Styles */
    p {
-      font-size: 20px;
+      font-size: 22px;
    }
    h1, h2 {
-      font-size: 20px;
+      font-size: 22px;
    }
    h3, h4, h5 {
-      font-size: 20px;
+      font-size: 24px;
    }
    h6 {
-      font-size: 22px;
+      font-size: 26px;
    }
 
    /*Footer Styles*/
@@ -51,18 +51,27 @@
    margin: 0.1%;
    }
    .dropdown {
-      min-width: 60%;
+      min-width: 50%;
   }
   .dropdownmenu:hover .dropdown {
-   display: block;
-   border-right: none;
-   border-left: none;
-   border-bottom: none;
-   border-bottom-left-radius: 10px;
-   border-bottom-right-radius: 10px;
-   margin-top: 0%;
-   padding-top: 5px;
+      display: block;
+      border-right: none;
+      border-left: none;
+      border-bottom: none;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      margin-top: 0%;
+      padding-top: 5px;
   }
+  .dropdown a {
+      font-size: 18px;
+      display: block;
+      padding: 0.01%;
+      margin: 0.01%;
+      border: none;
+      display: block;
+      text-decoration: underline;
+   }
 
   /*Grid Styles*/
    div.row{
