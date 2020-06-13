@@ -463,6 +463,7 @@ nav.horizontal a {
 }
 .dropdown {
     display: none;
+    position: absolute;
     float: none;
     background-color: white;
     min-width: 25%;
@@ -472,8 +473,8 @@ nav.horizontal a {
 .dropdown a {
     font-size: 18px;
     display: block;
-    padding: 0.1%;
-    margin: 0.1%;
+    padding: 0.01%;
+    margin: 0.01%;
     border: none;
 }
 #ddlinks > li {
